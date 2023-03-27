@@ -40,13 +40,13 @@ function App() {
     <div className="container">
       <div class="calculator">
         <form>
-          <div><img src={logo} class="logo" /></div>
+          <div><img src={logo} class="logo" alt='logo calculator' /></div>
           <div class="display">
             <input type="text" value={result} />
           </div>
 
           <div>
-            <input name="AC" type="button" aria-colspan="2" value="AC" onClick={handleClear} />
+            <input name="AC" type="button"  value="AC" onClick={handleClear} />
             <input name="%" type="button" value="%" onClick={handlePercentage} />
             <input name="clear-arrow" type="button"  value="&#8592;"  onClick={handleBackspace} />
             <input name="*" type="button"  value="*" onClick={handleClick} />
