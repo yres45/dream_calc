@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  background:linear-gradient(to right,rgb(224, 246, 118),green);
+  padding : 0;
+  margin: 0;
+}
+
+.calculator{
+  background: rgb(187, 190, 190);
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#span-two {
+  grid-column: span 2;
+}
+
+.calculator form input{
+  border: 0;
+  outline: 0;
+  width: 69px;
+  height: 69px;
+  border-radius: 9px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgb(76, 15, 155);
+  cursor: pointer;
+  margin: 10px;
+  font-size: 20px;
+  color: rgb(246, 245, 245);
+  outline: black;
+}
+
+input:active[type=button] {
+  background: #e5e5e5;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0px 0px 5px #1b0707;
+  -moz-box-shadow: inset 0px 0px 5px #110a0a;
+  box-shadow: inset 0px 0px 5px #160b0b;
+}
+
+form .display{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+  grid-column: 1/-1;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+form .display input{
+  text-align: right;
+  flex: 1;
+  font-size: 30px;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #e5e5e5;
+}
+
+.logo{
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  height: 40px;
+  width: 90px;
+}
+
