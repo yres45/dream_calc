@@ -9,10 +9,6 @@ function App() {
 
   function handleClick(e) {
     setResult(result.concat(e.target.name));
-
-  }
-  function validateInput(){
-    
   }
 
   function handlePercentage() {
