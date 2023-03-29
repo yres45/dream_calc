@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/dream_calc/static/css/main.9b8eba64.css",
-    "main.js": "/dream_calc/static/js/main.836f0afb.js",
-    "static/js/787.2a60f066.chunk.js": "/dream_calc/static/js/787.2a60f066.chunk.js",
-    "static/media/Background.png": "/dream_calc/static/media/Background.6ef92f4c5c4360102a76.png",
-    "static/media/DC.PNG": "/dream_calc/static/media/DC.db944d1fdf58cf359b47.PNG",
-    "index.html": "/dream_calc/index.html",
-    "main.9b8eba64.css.map": "/dream_calc/static/css/main.9b8eba64.css.map",
-    "main.836f0afb.js.map": "/dream_calc/static/js/main.836f0afb.js.map",
-    "787.2a60f066.chunk.js.map": "/dream_calc/static/js/787.2a60f066.chunk.js.map"
+    "main.css": "./static/css/main.2ece312d.css",
+    "main.js": "./static/js/main.6cb05508.js",
+    "static/js/787.2a60f066.chunk.js": "./static/js/787.2a60f066.chunk.js",
+    "static/media/Background.png": "./static/media/Background.6ef92f4c5c4360102a76.png",
+    "static/media/DC.PNG": "./static/media/DC.db944d1fdf58cf359b47.PNG",
+    "index.html": "./index.html",
+    "main.2ece312d.css.map": "./static/css/main.2ece312d.css.map",
+    "main.6cb05508.js.map": "./static/js/main.6cb05508.js.map",
+    "787.2a60f066.chunk.js.map": "./static/js/787.2a60f066.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b8eba64.css",
-    "static/js/main.836f0afb.js"
+    "static/css/main.2ece312d.css",
+    "static/js/main.6cb05508.js"
   ]
 }
