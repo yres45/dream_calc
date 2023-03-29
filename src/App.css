@@ -11,10 +11,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 187px;
+  
 }
 
 body{
-  background:linear-gradient(to right,rgb(224, 246, 118),green);
+  background-image: url('Background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  
   padding : 0;
   margin: 0;
 }
@@ -35,7 +41,7 @@ body{
   border: 0;
   outline: 0;
   width: 69px;
-  height: 69px;
+  height: 55px;
   border-radius: 9px;
   box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
   background-color: rgb(76, 15, 155);
@@ -47,7 +53,7 @@ body{
 }
 div>input:hover {
   background-color:#aa7b36;
-  transition: 0.7s;
+  transition: 0.2s;
 }
 input:active[type=button] {
   background: #e5e5e5;
@@ -73,9 +79,11 @@ form .display input{
   word-break: break-all;
   word-wrap: break-word;
   color: #e5e5e5;
+  padding:20px
 }
 
 .logo{
+  margin-left: 140px;
   align-items: center;
   justify-content: center;
   border-radius: 3px;
