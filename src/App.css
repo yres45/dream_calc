@@ -26,7 +26,7 @@ body{
 }
 
 .calculator{
-  background: rgb(187, 190, 190);
+  background: #A1A1A1;
   padding: 20px;
   border-radius: 10px;
   justify-content: center;
@@ -44,7 +44,7 @@ body{
   height: 55px;
   border-radius: 9px;
   box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
-  background-color: rgb(76, 15, 155);
+  background-color: #80BA68;
   cursor: pointer;
   margin: 10px;
   font-size: 20px;
@@ -63,14 +63,14 @@ input:active[type=button] {
   box-shadow: inset 0px 0px 5px #160b0b;
 }
 #button-color {
-  background-color: aqua;
-  color: #e5e5e5;
+  background-color: white;
+  color: #000000;
 }
 
 #buttonAC-color {
-  background-color: red;
+  background-color: #474444;
  
-  color: green;
+  color: white;
 }
 
 
