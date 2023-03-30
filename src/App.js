@@ -9,7 +9,7 @@ function App() {
 
   function handleClick(e) {
 
-    if ((e.target.name === '%' && !result) || (e.target.name === '/' && !result) || (e.target.name === '*' && !result) || (e.target.name === '=' && !result)) {
+    if ((e.target.name === '%' && !result) || (e.target.name === '/' && !result) || (e.target.name === '*' && !result)) {
       // Do nothing if the first character is %
       return;
     }
@@ -18,15 +18,11 @@ function App() {
       setResult('0.');
       return;
     }
-    else if (e.target.name === '=' && !result) {
-      // If the first character is ., prepend a 0
-      setResult(' ');
-      return;
-    }
+    
     const lastChar = result.charAt(result.length - 1);
-    const isOperator = e.target.name.match(/[-+/*%.=]/);
+    const isOperator = e.target.name.match(/[-+/*%.]/);
   
-    if (isOperator && lastChar && lastChar.match(/[-+/*%.=]/)) {
+    if (isOperator && lastChar && lastChar.match(/[-+/*%.]/)) {
       // Do nothing if the last character is an operator
       return;
     }
@@ -67,39 +63,39 @@ function App() {
             <input type="text" value={result} />
           </div>
 
-          <div>
-            <input name="AC" type="button"  value="AC" onClick={handleClear} />
-            <input name="%" type="button" value="%" onClick={handlePercentage} />
-            <input name="clear-arrow" type="button"  value="&#8592;"  onClick={handleBackspace} />
-            <input name="*" type="button"  value="*" onClick={handleClick} />
+          <div >
+            <input id="button-color" name="AC" type="button"  value="AC" onClick={handleClear} />
+            <input id="button-color" name="%" type="button" value="%" onClick={handlePercentage} />
+            <input id="button-color" name="clear-arrow" type="button"  value="&#8592;"  onClick={handleBackspace} />
+            <input id="button-color" name="*" type="button"  value="*" onClick={handleClick} />
           </div>
 
           <div>
-            <input name="7" type="button"  value="7" onClick={handleClick} />
-            <input name="8" type="button"  value="8" onClick={handleClick} />
-            <input name="9" type="button"  value="9" onClick={handleClick} />                      
-            <input name="/" type="button"  value="&#247;" onClick={handleClick} />           
+            <input id="button-color" name="7" type="button"  value="7" onClick={handleClick} />
+            <input id="button-color" name="8" type="button"  value="8" onClick={handleClick} />
+            <input id="button-color" name="9" type="button"  value="9" onClick={handleClick} />                      
+            <input id="button-color" name="/" type="button"  value="&#247;" onClick={handleClick} />           
           </div>
 
           <div>
-            <input name="4" type="button"  value="4" onClick={handleClick} />
-            <input name="5" type="button"  value="5" onClick={handleClick} />
-            <input name="6" type="button"  value="6" onClick={handleClick} />                      
-            <input name="-" type="button"  value="&#8722;" onClick={handleClick} />           
+            <input id="button-color" name="4" type="button"  value="4" onClick={handleClick} />
+            <input id="button-color" name="5" type="button"  value="5" onClick={handleClick} />
+            <input id="button-color" name="6" type="button"  value="6" onClick={handleClick} />                      
+            <input id="button-color" name="-" type="button"  value="&#8722;" onClick={handleClick} />           
           </div>
 
           <div>
-            <input name="1" type="button"  value="1" onClick={handleClick} />
-            <input name="2" type="button"  value="2" onClick={handleClick} />
-            <input name="3" type="button"  value="3" onClick={handleClick} />                      
-            <input name="+" type="button"  value="&#43;" onClick={handleClick} />           
+            <input id="button-color" name="1" type="button"  value="1" onClick={handleClick} />
+            <input id="button-color" name="2" type="button"  value="2" onClick={handleClick} />
+            <input id="button-color" name="3" type="button"  value="3" onClick={handleClick} />                      
+            <input id="button-color" name="+" type="button"  value="&#43;" onClick={handleClick} />           
           </div>
-
+        
           <div>
-            <input name="00" type="button"  value="00" onClick={handleClick} />
-            <input name="0" type="button"  value="0" onClick={handleClick} />
-            <input name="." type="button"  value="." onClick={handleClick} />                      
-            <input name="=" type="button"  value="=" onClick={handleCalculate} />           
+            <input id="button-color" name="00" type="button"  value="00" onClick={handleClick} />
+            <input id="button-color" name="0" type="button"  value="0" onClick={handleClick} />
+            <input id="button-color" name="." type="button"  value="." onClick={handleClick} />                      
+            <input id="button-color" name="=" type="button"  value="=" onClick={handleCalculate} />           
           </div>         
                 
 
