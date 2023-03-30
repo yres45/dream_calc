@@ -64,7 +64,7 @@ function App() {
           </div>
 
           <div >
-            <input id="button-color" name="AC" type="button"  value="AC" onClick={handleClear} />
+            <input id="buttonAC-color" name="AC" type="button"  value="AC" onClick={handleClear} />
             <input id="button-color" name="%" type="button" value="%" onClick={handlePercentage} />
             <input id="button-color" name="clear-arrow" type="button"  value="&#8592;"  onClick={handleBackspace} />
             <input id="button-color" name="*" type="button"  value="*" onClick={handleClick} />
