@@ -8,6 +8,28 @@ function App() {
   const [result, setResult] = useState('');
 
   function handleClick(e) {
+
+    if ((e.target.name === '%' && !result) || (e.target.name === '/' && !result) || (e.target.name === '*' && !result) || (e.target.name === '=' && !result)) {
+      // Do nothing if the first character is %
+      return;
+    }
+    else if (e.target.name === '.' && !result) {
+      // If the first character is ., prepend a 0
+      setResult('0.');
+      return;
+    }
+    else if (e.target.name === '=' && !result) {
+      // If the first character is ., prepend a 0
+      setResult(' ');
+      return;
+    }
+    const lastChar = result.charAt(result.length - 1);
+    const isOperator = e.target.name.match(/[-+/*%.=]/);
+  
+    if (isOperator && lastChar && lastChar.match(/[-+/*%.=]/)) {
+      // Do nothing if the last character is an operator
+      return;
+    }
     setResult(result.concat(e.target.name));
   }
 
