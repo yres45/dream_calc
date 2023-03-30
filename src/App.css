@@ -51,10 +51,7 @@ body{
   color: rgb(246, 245, 245);
   outline: black;
 }
-div>input:hover {
-  background-color:#aa7b36;
-  transition: 0.2s;
-}
+
 input:active[type=button] {
   background: #e5e5e5;
   cursor: pointer;
@@ -66,7 +63,10 @@ input:active[type=button] {
   background-color: white;
   color: #000000;
 }
-
+#button-color:hover {
+  background-color:#aa7b36;
+  transition: 0.2s;
+}
 #buttonAC-color {
   background-color: #474444;
  
