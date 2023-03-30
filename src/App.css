@@ -69,7 +69,8 @@ input:active[type=button] {
 
 #buttonAC-color {
   background-color: red;
-  color: #e5e5e5;
+ 
+  color: green;
 }
 
 
