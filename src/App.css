@@ -64,7 +64,7 @@ input:active[type=button] {
   color: #000000;
 }
 #button-color:hover {
-  background-color:#aa7b36;
+  background-color:#88BDA8;
   transition: 0.2s;
 }
 #buttonAC-color {
